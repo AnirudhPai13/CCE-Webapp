@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events</title>
+    <link rel="stylesheet" href="upcoming_events.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/access-logo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="icon1">
+            <h2 class="logo1"><img src="images/accesslogo.png" alt="Logo"></h2> <!-- Add a logo image source -->
+        </div>
+
+        <div class="menu">
+            <ul class="nav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="faculty.html">FACULTY</a></li>
+                <li><a href="committee_members.html">COMMITTEE MEMBERS</a></li>
+                <li><a href="placements.html">PLACEMENTS</a></li>
+                <li><a href="notes.html">NOTES & RESOURCES</a></li>
+                <li><a href="upcoming_events.html" style="color: #ff7200;">UPCOMING EVENTS</a></li>
+                <li><a href="about_us.html">ABOUT US</a></li>
+            </ul>
+        </div>
+
+        <!-- <div class="icon2">
+            <h2 class="logo2"><img src="images/nittelogo.png" alt="Logo"></h2> <!-- Add a logo image source -->
+        <!-- </div> -->
+
+    </div> 
+
+    <header>
+        <h1>Department Events</h1>
+        <p>Discover our Upcoming and Past Events</p>
+    </header>
+
+    <div class="container">
+        <h1>Upcoming Events</h1>
+        <div class="events" id="upcoming-events">
+            <!-- Upcoming Events will be populated here -->
+        </div>
+
+        <h1>Past Events</h1>
+        <div class="events" id="past-events">
+            <!-- Past Events will be populated here -->
+        </div>
+    </div>
+
+    <!-- Modal for Event Details -->
+    <div id="event-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="event-title"></h2>
+            <p id="event-description"></p>
+            <p><strong>Organizers:</strong> <span id="event-organizers"></span></p>
+            <p><strong>Winners:</strong> <span id="event-winners"></span></p>
+            <button id="show-photos">Show Photos</button>
+            <div id="event-photos" class="photos"></div>
+        </div>
+    </div>
+
+    <script src="events.js"></script>
+</body>
+</html>

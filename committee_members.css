@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Calibri' ;
+    background: url('images/committee.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+.member img {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 20px;
+}
+.member-info {
+    flex-grow: 1;
+}
+.member-info h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+.member-info p {
+    margin: 5px 0;
+}
+
+.member img {
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height */
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 20px;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.member img {
+    max-width: 100%; /* Ensures the image does not exceed the width of its container */
+    max-height: 100%; /* Ensures the image does not exceed the height of its container */
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.year-tabs {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.year-tab {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.year-tab.active {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
